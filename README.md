@@ -3,8 +3,8 @@
 ### Plan
 - [x] 교제선정. 쉬운예제 코드로 실습하기로 함.
 - [ ] Go 설치 https://golang.org
-- [ ] [hellolazypic](docs/hellolazypic.md)
-- [ ] [cross platform compile](docs/compile.md)
+- [ ] [Hello Lazypic](docs/hellolazypic.md)
+- [ ] [Cross Platform Compile](docs/compile.md)
 - [ ] 개발환경 셋팅(에디터, Lint)
 - [ ] 기본 문법
 - [ ] 기본 web서버 제작
