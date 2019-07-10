@@ -25,3 +25,4 @@
 - [ ] Slack <-> Github 물리기
 - [ ] 쿼리설계
 - [ ] RestAPI 설계
+- [ ] go get 을 이용한 패키지 설치
