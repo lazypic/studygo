@@ -20,6 +20,7 @@
 - [ ] [테스트코드 작성](docs/testcode.md)
 - [ ] [Templates](docs/template.md)
 - [ ] DB: mongoDB를 기준으로 진행(커미터 활동준비를 위해서 mongoDB로 진행합니다.)
+- [ ] DB: DynamoDB(커미터 활동준비를 위해서 AWS로 진행합니다.)
 - [ ] Github를 이용해서 협업리포지터러 생성
 - [ ] TravisCI 설정
 - [ ] Slack <-> Github 물리기
