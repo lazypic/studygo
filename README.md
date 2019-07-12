@@ -8,6 +8,7 @@
 - [ ] [Hello Lazypic](docs/hellolazypic.md)
 - [ ] [Compile](docs/compile.md)
 - [ ] [협업준비](docs/collaboration.md)
+- [ ] [조엘온소프트웨어-조엘테스트12](docs/joel_test.md)
 - [ ] [개발환경 셋팅(에디터, Lint)](docs/devenv.md)
 - [ ] [기본 문법](docs/basic.md)
 - [ ] go doc
@@ -22,7 +23,7 @@
 - [ ] DB: mongoDB를 기준으로 진행(커미터 활동준비를 위해서 mongoDB로 진행합니다.)
 - [ ] DB: DynamoDB(커미터 활동준비를 위해서 AWS로 진행합니다.)
 - [ ] Github를 이용해서 협업리포지터러 생성
-- [ ] TravisCI 설정
+- [ ] [TravisCI 설정](docs/travisci.md)
 - [ ] Slack <-> Github 물리기
 - [ ] 쿼리설계
 - [ ] RestAPI 설계
