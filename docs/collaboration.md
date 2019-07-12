@@ -23,3 +23,5 @@ $ go test
 ```bash
 $ go vet
 ```
+
+체크해주는 항목: https://golang.org/cmd/vet/
