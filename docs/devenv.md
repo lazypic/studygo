@@ -1,7 +1,7 @@
 # Development Env Setting
 
 Go 개발환경을 셋팅합니다.
-기본적인 스터디 + 실무 작업을 위한 개발환경을 셋팅하겠습니다.
+기본적인 스터디 + 실무 작업 + Lazypic 환경을 동시에 셋팅하겠습니다.
 
 # brew 설치
 macOS에서 패키지 관리에 편한 도구인 brew를 설치해봅시다.
@@ -16,7 +16,7 @@ $ brew install ripgrep
 # vscode 설치
 
 - vscode 설치: https://code.visualstudio.com
-- go extensions 설치
+- Go Extensions 설치
 
 # vim 설치
 
