@@ -4,11 +4,11 @@
 
 ### Plan
 - [x] 교제없이 쉬운예제 코드로 시작을 하기로 함.
-- [ ] [Go 설치 https://golang.org](docs/install.md)
-- [ ] [Hello Lazypic](docs/hellolazypic.md)
-- [ ] [Compile](docs/compile.md)
-- [ ] [협업준비](docs/collaboration.md)
-- [ ] [조엘온소프트웨어-조엘테스트12](docs/joel_test.md)
+- [x] [Go 설치 https://golang.org](docs/install.md)
+- [x] [Hello Lazypic](docs/hellolazypic.md)
+- [x] [Compile](docs/compile.md)
+- [x] [협업준비](docs/collaboration.md)
+- [x] [조엘온소프트웨어-조엘테스트12](docs/joel_test.md)
 - [ ] [개발환경 셋팅(에디터, Lint)](docs/devenv.md)
 - [ ] [기본 문법](docs/basic.md)
 - [ ] go doc
