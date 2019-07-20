@@ -10,10 +10,10 @@
 - [x] [협업준비](docs/collaboration.md)
 - [x] [조엘온소프트웨어-조엘테스트12](docs/joel_test.md)
 - [ ] [개발환경 셋팅(에디터, Lint)](docs/devenv.md)
-- [ ] [기본 문법](docs/basic.md)
+- [ ] [기본문법](docs/basic.md)
+- [ ] [인수설정](docs/flag.md)
 - [ ] go doc
 - [ ] [기본 web서버 제작](docs/webserver.md)
-- [ ] [인수설정](docs/flag.md)
 - [ ] [레귤러익스프레션](docs/regex.md)
 - [ ] [web서버에서 hellolazypic](docs/webserver_lazypic.md)
 - [ ] [자료구조설계](docs/struct.md)
