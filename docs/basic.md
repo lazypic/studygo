@@ -8,21 +8,21 @@ Go에서 사용하는 키워드는 총 25개입니다.
 
 #### struct, map, type
 
-#### switch, case, default, fallthrough, select
-- https://github.com/golang/go/wiki/Switch
-
 #### func, defer
 
 #### if, else
 
 #### for, range, continue, break
 
+#### switch, case, default, fallthrough, select
+- https://github.com/golang/go/wiki/Switch
+
+#### return
+
 #### interface
 - https://gobyexample.com/interfaces
 
 #### go, chan
-
-#### return
 
 #### goto
 - 코드 흐름상 잘 사용하지 않지만 속도 또는 연산플로우상 써야하는 상황에서는 사용한다.
