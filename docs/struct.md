@@ -31,6 +31,10 @@ Reference: https://users.ece.utexas.edu/~adnan/pike.html
 ### 단계2
 자료구조를 작성했다면, 이후 설계하는 툴에서 가장 필요한 핵심 기능만 작성해 봅니다.
 
+- ref: https://godoc.org/github.com/rwcarlsen/goexif/exif#example-Decode
+
+- exif란? https://namu.wiki/w/EXIF
+
 ### 단계3
 만들어진 자료구조로 토론하기.
 
