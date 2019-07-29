@@ -12,7 +12,8 @@
 - [x] [개발환경 셋팅(에디터, Lint)](docs/devenv.md)
 - [x] [기본문법](docs/basic.md)
 - [x] go doc
-- [ ] [자료구조설계](docs/struct.md)
+- [x] [자료구조설계1](docs/struct.md)
+- [ ] [자료구조설계2](docs/kalena.md)
 - [ ] [인수설정](docs/flag.md)
 - [ ] [메소드설계](docs/method.md)
 - [ ] [기본 web서버 제작](docs/webserver.md)
