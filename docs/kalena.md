@@ -17,5 +17,7 @@
     - http://www.appgenix-software.com/#feat-2
     - 윅스: 달력없음.
     - Google 캘린더: https://gsuite.google.co.kr/intl/ko/products/calendar/
+    - 다음: https://medium.com/happyprogrammer-in-jeju/다음-캘린더-서비스의-비하인드-스토리-ec0faac67f05
+    - 네이버 달력: https://calendar.naver.com/main.nhn#%7B%22sSection%22%3A%22scheduleMain%22%2C%22oParameter%22%3A%7B%22sViewType%22%3A%22month%22%2C%22sDate%22%3A%222019-08-05%22%7D%7D
 
 ## 2차 토론
