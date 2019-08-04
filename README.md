@@ -10,22 +10,21 @@
 - [x] [협업준비](docs/collaboration.md)
 - [x] [조엘온소프트웨어-조엘테스트12](docs/joel_test.md)
 - [x] [개발환경 셋팅(에디터, Lint)](docs/devenv.md)
+- [x] Slack <-> Github 물리기
 - [x] [기본문법](docs/basic.md)
 - [x] go doc
 - [x] [자료구조설계1](docs/struct.md)
 - [ ] [자료구조설계2](docs/kalena.md)
 - [ ] [인수설정](docs/flag.md)
+- [ ] [레귤러익스프레션](docs/regex.md)
+- [ ] [테스트코드 작성](docs/testcode.md)
 - [ ] [메소드설계](docs/method.md)
 - [ ] [기본 web서버 제작](docs/webserver.md)
-- [ ] [레귤러익스프레션](docs/regex.md)
 - [ ] [web서버에서 hellolazypic](docs/webserver_lazypic.md)
-- [ ] [테스트코드 작성](docs/testcode.md)
 - [ ] [Templates](docs/template.md)
+- [ ] go get 을 이용한 패키지 설치
 - [ ] DB: mongoDB를 기준으로 진행(커미터 활동준비를 위해서 mongoDB로 진행합니다.)
 - [ ] DB: DynamoDB(커미터 활동준비를 위해서 AWS로 진행합니다.)
-- [ ] Github를 이용해서 협업리포지터러 생성
 - [ ] [TravisCI 설정](docs/travisci.md)
-- [ ] Slack <-> Github 물리기
 - [ ] 쿼리설계
 - [ ] RestAPI 설계
-- [ ] go get 을 이용한 패키지 설치

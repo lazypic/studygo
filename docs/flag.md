@@ -22,4 +22,28 @@ func main() {
     fmt.Println(s)
 }
 ```
+
 #### flag
+규모가 있는 프로그램을 작성할 때는 flag를 설정합니다.
+
+```go
+package main
+
+import (
+    "flag"
+    "fmt"
+)
+
+var (
+    flagAdd = flag.Bool("add", false, "add mode")
+    flagDate = flag.String("date", "", "date string")
+)
+
+func main() {
+    flag.Parse()
+    fmt.Println(*flagAdd)
+    fmt.Println(*flagDate)
+}
+```
+
+kalena 자료구조를 선언하고 flag 값을 설정해보는 예제 작성하기.
