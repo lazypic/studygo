@@ -11,6 +11,11 @@
 - 심플한 GUI
 
 ## 시장조사
-- 
+- 개인: https://zapier.com/blog/best-calendar-apps/#anydo
+
+- 기업: 사용자, 예약자가 접근해서 본다. 최대한 심플하게
+    - http://www.appgenix-software.com/#feat-2
+    - 윅스: 달력없음.
+    - Google 캘린더: https://gsuite.google.co.kr/intl/ko/products/calendar/
 
 ## 2차 토론
