@@ -14,7 +14,7 @@
 - [x] [기본문법](docs/basic.md)
 - [x] go doc
 - [x] [자료구조설계1](docs/struct.md)
-- [ ] [자료구조설계2](docs/kalena.md)
+- [x] [자료구조설계2](docs/kalena.md)
 - [ ] [인수설정](docs/flag.md)
 - [ ] [레귤러익스프레션](docs/regex.md)
 - [ ] [테스트코드 작성](docs/testcode.md)
