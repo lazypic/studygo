@@ -53,7 +53,7 @@ func main() {
 - 인수는 Key, 값은 Value라고 생각하고 작성한다.
 - Key와 Value로 항상 고유의 그래프를 그릴 수 있는 느낌으로 인수를 설계한다.
 
-![graph_argv](./figures/graph_argv.png)
+![graph_argv](../figures/graph_argv.png)
 
 #### 실습
 
