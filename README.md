@@ -18,6 +18,7 @@
 - [x] [인수설정](docs/flag.md) - 사용자로부터 값을 가지고 오는 방법
 - [x] [레귤러익스프레션](docs/regex.md) - 사용자로부터 받은 값의 형식을 체크하는 방법
 - [ ] [테스트코드 작성](docs/testcode.md)
+- [ ] [TravisCI 설정](docs/travisci.md)
 - [ ] [메소드설계](docs/method.md)
 - [ ] [기본 web서버 제작](docs/webserver.md)
 - [ ] [web서버 제작](docs/webserver_struct.md)
@@ -25,6 +26,5 @@
 - [ ] go get 을 이용한 패키지 설치
 - [ ] DB: mongoDB를 기준으로 진행(커미터 활동준비를 위해서 mongoDB로 진행합니다.)
 - [ ] DB: DynamoDB(커미터 활동준비를 위해서 AWS로 진행합니다.)
-- [ ] [TravisCI 설정](docs/travisci.md)
 - [ ] 쿼리설계
 - [ ] RestAPI 설계
