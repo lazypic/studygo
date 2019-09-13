@@ -1,5 +1,5 @@
 # Test code
-이번시간에는 함수를 하나 만들고 함수를 테스트할 수 있는 테스트 코드를 작성해보겠습니다.
+이번시간에는 시간과 관련된 함수 하나를 만들고, 만든 함수에 대한 테스트 코드를 작성해보겠습니다.
 클라우드 컴퓨터는 대부분 UTC 시간을 사용합니다.
 우리는 한국에 있기 때문에 지역을 한국으로 설정하고 한국시간과 UTC 시간을 출력해보겠습니다.
 
@@ -13,27 +13,28 @@ import (
 	)
 
 func main() {
-	start := "2019-09-13T22:04:32"
-	end := "2019-09-14T22:04:32"
-	loc, err := time.LoadLocation("Asia/Seoul")
+	start := "2019-09-13T22:04:32+09:00"
+	end := "2019-09-14T22:04:32+09:00"
+	location := "Asia/Seoul"
+	loc, err := time.LoadLocation(location)
 	if err != nil {
 		log.Fatal(err)
 	}
-	s, err := time.Parse("2006-01-02T15:04:05", start)
+	s, err := time.Parse("2006-01-02T15:04:05-07:00", start)
 	if err != nil {
 		log.Fatal(err)
 	}
-	e, err := time.Parse("2006-01-02T15:04:05", end)
+	e, err := time.Parse("2006-01-02T15:04:05-07:00", end)
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(s.In(loc))
-	fmt.Println(s.UTC())
-	fmt.Println(e.In(loc))
-	fmt.Println(e.UTC())
+	fmt.Println(location, "start", s.In(loc))
+	fmt.Println("UTC", "start", s.UTC())
+	fmt.Println(location, "end", e.In(loc))
+	fmt.Println("UTC", "end", e.UTC())
 }
 ```
-
+start 변수값을 중국/북경 시간인 `2019-09-13T22:04:32+08:00` 값으로 바꾸더라도 잘 변환되는것도 테스트 해보세요.
 
 start, end 시간을 두개 받아서 end 시간이 start 시간보다 미래의 시간인지 체크하는 함수 입니다.
 
@@ -60,24 +61,24 @@ import (
 	)
 
 func main() {
-	start := "2019-09-15T22:04:32"
-	end := "2019-09-14T22:04:32"
+	start := "2019-09-15T22:04:32+09:00"
+	end := "2019-09-14T22:04:32+09:00"
 	loc, err := time.LoadLocation("Asia/Seoul")
 	if err != nil {
 		log.Fatal(err)
 	}
-	s, err := time.Parse("2006-01-02T15:04:05", start)
+	s, err := time.Parse("2006-01-02T15:04:05-07:00", start)
 	if err != nil {
 		log.Fatal(err)
 	}
-	e, err := time.Parse("2006-01-02T15:04:05", end)
+	e, err := time.Parse("2006-01-02T15:04:05-07:00", end)
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(s.In(loc))
-	fmt.Println(s.UTC())
-	fmt.Println(e.In(loc))
-	fmt.Println(e.UTC())
+	fmt.Println(location, "start", s.In(loc))
+	fmt.Println("UTC", "start", s.UTC())
+	fmt.Println(location, "end", e.In(loc))
+	fmt.Println("UTC", "end", e.UTC())
 	fmt.Println(checkTime(s,e))
 }
 
@@ -101,37 +102,56 @@ import (
 func Test_checkTime(t *testing.T) {
     cases := []struct {
         start string
-        end string
+		end string
+		startLocation string
+		endLocation string
         want bool
     }{{
-        start: "2019-09-13T22:04:32",
-        end: "2019-09-14T22:04:32",
+        start: "2019-09-13T22:04:32+09:00",
+		end: "2019-09-14T22:04:32+09:00",
+		startLocation: "Asia/Seoul",
+		endLocation: "Asia/Seoul",
         want: true,
     }, {
-        start: "2019-09-15T22:04:32",
-        end: "2019-09-14T22:04:32",
+        start: "2019-09-15T22:04:32+09:00",
+		end: "2019-09-14T22:04:32+09:00",
+		startLocation: "Asia/Seoul",
+		endLocation: "Asia/Seoul",
 		want: false,
 	}, {
-        start: "2019-09-15T22:04:32",
-        end: "2019-09-15T22:04:33",
+        start: "2019-09-15T21:04:31+08:00", // 중국시간
+		end: "2019-09-15T22:04:32+09:00",
+		startLocation: "Asia/Seoul",
+		endLocation: "Asia/Seoul",
+		want: true,
+	}, {
+        start: "2019-09-15T22:04:32+09:00",
+		end: "2019-09-15T22:04:33+09:00",
+		startLocation: "Asia/Seoul",
+		endLocation: "Asia/Seoul",
         want: true,
     }}
-    loc, err := time.LoadLocation("Asia/Seoul")
-    if err != nil {
-        t.Fatal(err)
-    }
 
     for _, c := range cases {
-     	s, err := time.Parse("2006-01-02T15:04:05", c.start)
+     	s, err := time.Parse("2006-01-02T15:04:05-07:00", c.start)
     	if err != nil {
 	    	t.Fatal(err)
 	    }
-	    e, err := time.Parse("2006-01-02T15:04:05", c.end)
+	    e, err := time.Parse("2006-01-02T15:04:05-07:00", c.end)
 	    if err != nil {
 		    t.Fatal(err)
-	    }
-		result := checkTime(s.In(loc), e.In(loc))
+		}
+		startLoc, err := time.LoadLocation(c.startLocation)
+		if err != nil {
+			t.Fatal(err)
+		}
+		endLoc, err := time.LoadLocation(c.endLocation)
+		if err != nil {
+			t.Fatal(err)
+		}
+		result := checkTime(s.In(startLoc), e.In(endLoc))
 		if result != c.want {
+            t.Fatalf("%v, %v", s.In(startLoc).UTC(), e.In(endLoc).UTC())
 			t.Fatalf("Test_checkTime(%s,%s): 얻은 값: %v, 원하는 값: %v", c.start, c.end, result, c.want)
 		}
     }
