@@ -44,6 +44,10 @@ script:
 위 리스트는 언어, 언어버전, 환경변수, 필요한 서비스(저는 mongodb를 자주 사용합니다. 테스트시 mongoDB를 활성화 합니다.) 가상머신이 생성, 셋팅되고 script가 실행됩니다.
 Go 에서는 `go test`, `go vet` 같은 테스트가 필요합니다. 기본적으로 넣어줍니다.
 
+- 지원언어 리스트: https://docs.travis-ci.com/user/languages/
+- Go 언어 셋팅: https://docs.travis-ci.com/user/languages/go/
+- 서비스 리스트: https://docs.travis-ci.com/user/database-setup/
+
 ### Build passing 이미지정보를 Github에 추가하기
 빌드 상태를 매번 TravisCI에 접속하여 확인하는 것은 귀찮은 일 입니다.
 빌드 상태를 알 수 있는 이미지를 항상 리포지터리에 표기되도록 해두면 편리합니다.
