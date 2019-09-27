@@ -154,8 +154,7 @@ func Test_checkTime(t *testing.T) {
 		}
 		result := checkTime(s.In(startLoc), e.In(endLoc))
 		if result != c.want {
-            t.Fatalf("%v, %v", s.In(startLoc).UTC(), e.In(endLoc).UTC())
-			t.Fatalf("Test_checkTime(%s,%s): 얻은 값: %v, 원하는 값: %v", c.start, c.end, result, c.want)
+			t.Fatalf("Test_checkTime(%s,%s): 얻은 값: %v, 원하는 값: %v\n", s.In(startLoc).UTC(), e.In(endLoc).UTC(), result, c.want)
 		}
     }
 }
