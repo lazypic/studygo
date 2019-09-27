@@ -159,3 +159,29 @@ func Test_checkTime(t *testing.T) {
     }
 }
 ```
+
+### Test 실행
+
+터미널에서 다음처럼 타이핑하여 테스트를 실행합니다.
+
+```
+$ go test
+```
+
+- `go test`가 체크해주는 것
+    - 코드 밴치마크
+	- 테스트 코드 실행
+	- 보고(레포트)
+	- Coverage 체크
+	- 레이스 상태 체크: https://blog.golang.org/race-detector
+	    - 레이스 상태 참고자료: https://m.blog.naver.com/PostView.nhn?blogId=dev4unet&logNo=120055397425&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+
+#### Coverage체크시 count, atomic 차이
+count: 코드 구분이 몇번이나 실행되는지 체크
+atomic: 기본적으로 count와 같습니다. 다중 스레드 테스트에서 카운트 합니다. 좀더 오래 걸립니다.
+```
+$ go test -covermode=atomic
+```
+
+#### Go vet
+`go vet`이 체크해주는 것: https://golang.org/cmd/vet/
