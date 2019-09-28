@@ -177,7 +177,7 @@ $ go test
 	    - 레이스 상태 참고자료: https://m.blog.naver.com/PostView.nhn?blogId=dev4unet&logNo=120055397425&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 
 #### Coverage체크시 count, atomic 차이
-count: 코드 구분이 몇번이나 실행되는지 체크
+count: 코드 구이 몇번이나 실행되는지 체크
 atomic: 기본적으로 count와 같습니다. 다중 스레드 테스트에서 카운트 합니다. 좀더 오래 걸립니다.
 ```
 $ go test -covermode=atomic
