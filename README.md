@@ -25,7 +25,7 @@
 - [ ] RestAPI 제작
 - [ ] [Templates](docs/template.md)
 - [ ] go get 을 이용한 패키지 설치
-- [ ] DB: mongoDB를 기준으로 진행(커미터 활동준비를 위해서 mongoDB로 진행합니다.)
+- [ ] [mongoDB](docs/mongodb.md) 데이터베이스 처리하기커미터 활동준비를 위해서 mongoDB로 진행합니다.)
 - [ ] DB: DynamoDB(커미터 활동준비를 위해서 AWS로 진행합니다.)
 - [ ] 쿼리작성
 - [ ] Frontend 디자인
