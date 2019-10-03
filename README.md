@@ -22,10 +22,11 @@
 - [ ] [메소드설계](docs/method.md)
 - [ ] [기본 web서버 제작](docs/webserver.md)
 - [ ] [web서버 제작](docs/webserver_struct.md)
-- [ ] RestAPI 제작
+- [ ] [mongoDB](docs/mongodb.md) 데이터베이스 처리하기커미터 활동준비를 위해서 
+- [ ] [RestAPI 제작](docs/restapi.md)
 - [ ] [Templates](docs/template.md)
 - [ ] go get 을 이용한 패키지 설치
-- [ ] [mongoDB](docs/mongodb.md) 데이터베이스 처리하기커미터 활동준비를 위해서 mongoDB로 진행합니다.)
-- [ ] 쿼리작성
+mongoDB로 진행합니다.)
+- [ ] DB쿼리작성
 - [ ] Frontend 디자인
 - [ ] DB: DynamoDB(비용절감 서비스를 위한 어플리케이션을 위해 필요합니다.)
