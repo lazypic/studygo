@@ -22,7 +22,7 @@
 - [x] [메소드설계](docs/method.md)
 - [ ] [기본 web서버 제작](docs/webserver.md)
 - [ ] [web서버 제작](docs/webserver_struct.md)
-- [ ] [mongoDB](docs/mongodb.md) 데이터베이스 처리하기커미터 활동준비를 위해서 
+- [ ] [mongoDB](docs/mongodb.md) 데이터베이스 처리하기커미터 활동준비
 - [ ] [RestAPI 제작](docs/restapi.md)
 - [ ] [Templates](docs/template.md)
 - [ ] go get 을 이용한 패키지 설치
