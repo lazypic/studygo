@@ -19,7 +19,7 @@
 - [x] [레귤러익스프레션](docs/regex.md) - 사용자로부터 받은 값의 형식을 체크하는 방법
 - [x] [테스트코드 작성](docs/testcode.md)
 - [x] [TravisCI 설정](docs/travisci.md)
-- [ ] [메소드설계](docs/method.md)
+- [x] [메소드설계](docs/method.md)
 - [ ] [기본 web서버 제작](docs/webserver.md)
 - [ ] [web서버 제작](docs/webserver_struct.md)
 - [ ] [mongoDB](docs/mongodb.md) 데이터베이스 처리하기커미터 활동준비를 위해서 
