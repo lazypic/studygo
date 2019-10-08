@@ -29,5 +29,15 @@ import (
 )
 ```
 
+#### mongoDB의 특징
+대부분의 RDBMS는 Row단위로 Lock을 지원합니다.
+mongoDB는 데이터베이스 단위의 Lock을 지원합니다.
+기존 RDBMS 사용자는 데이터 무결성에 이해할 수 없는 방식이라고 생각합니다.
+또한 mongoDB는 데이터베이스별로 ReadLock, WriteLock이 있습니다. ReadLock은 여러개의 Operation에서 공유가 가능하지만 WriteLock은 하나만 사용할 수 있습니다. WriteLock은 항상 ReadLock보다 우선권을 가지고 있습니다.
+말하자면 mongoDB에서 동시에 Read,Write 작업이 대기하고 있다면 항상 Write 작업이 먼저 실행됩니다.
+따라서 mongoDB에서 동시에 데이터를 넣으면 작업을 수행하지 못하게 됩니다. 한번에 여러 데이터를 넣지 말아주세요.
+
+> 참고: https://docs.mongodb.com/manual/faq/concurrency/
+
 #### Reference
 - https://www.mongodb.com/blog/post/mongodb-go-driver-tutorial
