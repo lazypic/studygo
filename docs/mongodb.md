@@ -39,5 +39,78 @@ mongoDB는 데이터베이스 단위의 Lock을 지원합니다.
 
 > 참고: https://docs.mongodb.com/manual/faq/concurrency/
 
+#### 데이터 추가
+```go
+import (
+    "context"
+    "go.mongodb.org/mongo-driver/bson"
+    "go.mongodb.org/mongo-driver/mongo"
+    "go.mongodb.org/mongo-driver/mongo/options"
+)
+
+ctx, _ := context.WithTimeout(context.Background(), 5*time.Second)
+client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
+if err != nil {
+    log.Println(err)
+}
+collection := client.Database("kelena").Collection("user1")
+res, err := collection.InsertOne(ctx, bson.M{"title": "to do", "layer": "family"})
+if err != nil {
+    log.Println(err)
+}
+id := res.InsertedID
+```
+
+#### 데이터 검색
+
+```go
+import (
+    "context"
+    "go.mongodb.org/mongo-driver/bson"
+    "go.mongodb.org/mongo-driver/mongo"
+    "go.mongodb.org/mongo-driver/mongo/options"
+)
+
+var result struct {
+    Title string
+    Layer string
+}
+
+filter := bson.M{"title": "to do"}
+ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
+if err != nil {
+    log.Println(err)
+}
+col := client.Database("kelena").Collection("user1")
+err = col.FindOne(ctx, filter).Decode(&result)
+if err != nil {
+    log.Fatal(err)
+}
+```
+
+#### 데이터 삭제
+
+```go
+import (
+    "context"
+    "go.mongodb.org/mongo-driver/bson"
+    "go.mongodb.org/mongo-driver/mongo"
+    "go.mongodb.org/mongo-driver/mongo/options"
+)
+
+ctx, _ = context.WithTimeout(context.Background(), 5*time.Second)
+client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
+if err != nil {
+    log.Println(err)
+}
+col := client.Database("kelena").Collection("user1")
+res, err := col.DeleteOne(ctx, bson.M{"title": "to do"})
+if err != nil {
+    log.Fatal("DeleteOne() ERROR:", err)
+}
+fmt.Println("DeleteOne Result TYPE:", reflect.TypeOf(res))
+```
+
 #### Reference
 - https://www.mongodb.com/blog/post/mongodb-go-driver-tutorial
