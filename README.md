@@ -22,10 +22,10 @@
 - [x] [메소드설계](docs/method.md)
 - [x] [기본 web서버 제작](docs/webserver.md)
 - [ ] [mongoDB](docs/mongodb.md) 데이터베이스 처리하기커미터 활동준비
-- [ ] [RestAPI 제작](docs/restapi.md)
 - [ ] [Templates](docs/template.md)
-- [ ] go get 을 이용한 패키지 설치
-mongoDB로 진행합니다.)
-- [ ] DB쿼리작성
-- [ ] Frontend 디자인
+- [ ] [RestAPI 제작](docs/restapi.md) kalena 프로젝트 진행 & 교육진행
+- [ ] Frontend 디자인: kalena 프로젝트 진행 & 교육진행
+- [ ] DB쿼리작성: kalena 프로젝트 진행 & 교육진행
+
+### AWS
 - [ ] DB: DynamoDB(비용절감 서비스를 위한 어플리케이션을 위해 필요합니다.)
