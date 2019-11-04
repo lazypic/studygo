@@ -28,7 +28,11 @@
 - [ ] DB쿼리작성: kalena 프로젝트 진행 & 교육진행
 
 ### Game
+- 웹어셈블리에 대한 소개.
+
 - https://ebiten.org/webassembly.html
+    - https://github.com/OpenDiablo2/OpenDiablo2
+    - 
 
 ### AWS
 - [ ] DB: DynamoDB(비용절감 서비스를 위한 어플리케이션을 위해 필요합니다.)
