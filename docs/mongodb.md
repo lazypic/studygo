@@ -113,9 +113,9 @@ if err != nil {
     log.Println(err)
 }
 col := client.Database("kelena").Collection("user1")
-res, err := col.DeleteOne(ctx, bson.M{"title": "to do"})
+res, err := col.DeleteOne(ctx, bson.M{"title": "todo"})
 if err != nil {
-    log.Fatal("DeleteOne() ERROR:", err)
+    log.Fatal(err)
 }
 fmt.Println("DeleteOne Result TYPE:", reflect.TypeOf(res))
 ```
