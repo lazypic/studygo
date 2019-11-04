@@ -20,8 +20,7 @@
 - [x] [테스트코드 작성](docs/testcode.md)
 - [x] [TravisCI 설정](docs/travisci.md)
 - [x] [메소드설계](docs/method.md)
-- [ ] [기본 web서버 제작](docs/webserver.md)
-- [ ] [web서버 제작](docs/webserver_struct.md)
+- [x] [기본 web서버 제작](docs/webserver.md)
 - [ ] [mongoDB](docs/mongodb.md) 데이터베이스 처리하기커미터 활동준비
 - [ ] [RestAPI 제작](docs/restapi.md)
 - [ ] [Templates](docs/template.md)

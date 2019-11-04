@@ -54,7 +54,15 @@ if err != nil {
     log.Println(err)
 }
 collection := client.Database("kelena").Collection("user1")
-res, err := collection.InsertOne(ctx, bson.M{"title": "to do", "layer": "family"})
+
+var Item struct {
+    Title string `bson:"title" json:"title"`
+    Layer string `bson:"layer" json:"layer"`
+}
+i := Item{}
+i.Title = "todo"
+i.Layer = "family"
+res, err := collection.InsertOne(ctx, i)
 if err != nil {
     log.Println(err)
 }
