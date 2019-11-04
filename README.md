@@ -27,5 +27,8 @@
 - [ ] Frontend 디자인: kalena 프로젝트 진행 & 교육진행
 - [ ] DB쿼리작성: kalena 프로젝트 진행 & 교육진행
 
+### Game
+- https://ebiten.org/webassembly.html
+
 ### AWS
 - [ ] DB: DynamoDB(비용절감 서비스를 위한 어플리케이션을 위해 필요합니다.)
