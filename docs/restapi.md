@@ -28,3 +28,6 @@ Allow: GET,PUT,DELETE,OPTIONS,HEAD
 ### PATCH
 특정 값만 바꾸고 싶을 때 사용합니다.
 PUT과 구분해서 사용하는 추세입니다.
+
+## Todo
+- 같은 Wifi 네트워크에 모바일 장비를 접근하고 RestAPI를 이용해서 데이터를 처리해본다.
